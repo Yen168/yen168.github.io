@@ -2,7 +2,7 @@
 var bio ={
 
 	"name": "Yen-An Chen",
-	"role": "",
+	"role": "Back-End Developer",
 	"contacts": {
 		"mobile": "(646)-667-5210",
 		"email": "yenan.chen@gmail.com",
@@ -35,6 +35,35 @@ var education = {
 		"dates": 2008,
 		"url": "http://www-en.scu.edu.tw/"
 	}
+	],
+
+	"researches": [
+	{
+		
+		"name": "Emotion Regulation Questionnaire Tradition Chinese Version",
+		"location": "Taipei, Taiwan.",
+		"dates": "2007",
+		"url": "http://spl.stanford.edu/pdfs/ERQ/Taiwanese.pdf"
+
+	},
+	{
+		
+		"name": "The effect on homepage evaluation with the consistency between product color selection and color perceptual space. (in Chinese).",
+		"location": "Taiwanese Psychological Association, Tainan, Taiwan.",
+		"dates": "2007",
+		"url": "#"
+
+	},{
+		
+		"name": "Wang, M.Y., Chen, Y.A., & Cho, S.L. (May, 2005). Inversion effects for Chinese characters,objects and faces. Paper presented at the 10th Conference on Attention & Perception.",
+		"location": "National Taiwan University, Taipei, Taiwan.",
+		"dates": "2005",
+		"url": "http://tci.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclret&s=id=%22TCI0002097665%22.&searchmode=basic&tcihsspage=tcisearch_opt2_search"
+
+	}
+
+		
+
 	]
 }
 
@@ -285,10 +314,30 @@ education.display = function() {
 	$(".education-entry:last").append(formattedaMajor);
 	
 
+	}
+
+
+	$("#education").append(HTMLresearchStart);
 	
-}
+	for(research in education.researches){
+
+		var formattedResearchName = HTMLresearchTitle.replace("%data%",education.researches[research].name).replace("%url%",education.researches[research].url);
+		$(".research-entry").append(formattedResearchName);
+	
+		var formattedResearchDates = HTMLresearchDates.replace("%data%",education.researches[research].dates);
+		$(".research-entry").append(formattedResearchDates);
+		
+		var formattedResearchLoca = HTMLresearchLocation.replace("%data%",education.researches[research].location);
+		$(".research-entry").append(formattedResearchLoca);
+	
+
+	}
+
+
 
 } 
+
+
 
 projects.display();
 education.display();
