@@ -1,0 +1,32 @@
+{"name":"bubble", "children": [
+{"name":"Web App","description":"",
+"children":[
+    {"name": "HTML", "note":"","address":""},
+    {"name": "JavaScript", "note":"","address":""},
+    {"name": "CSS", "note":"","address":""},
+    {"name": "Rails", "note":"Developed Rails web UI application with Bootstrap to facilitate non-Linux users familiarize control image distribution function.","address":""},
+    {"name": "PHP", "note":"Applied PHP to set up interaction lab website.(Rewrited whole project from ASP to PHP)","address":""}
+
+]},
+{"name": "Coding", "description": "",
+"children":[
+    {"name":"C/C++", "note":"Designed psychology experimental research methods and developed experimental tools by using C++.","address":""},
+    {"name":"Java", "note":"","address":""},
+    {"name":"Go", "note":"","address":""}
+]},
+{"name":"Scripting", "description":"",
+"children":[
+    {"name":"Python", "note":"Utilized Python to design and program customizable catalog application to showcase wholesale jewelry items, thus increasing productivity by 90% compared to using Photoshop.","address":""},
+    {"name":"Command Line", "note":"Experienced Linux user with emphasis in design and implementation of RDBMS.","address":""},
+    {"name":"Ruby", "note":"Implemented eCommerce projects for both wholesale and retail business, applying Ruby and Liquid templates to manage company websites. (Based on Shopify)","address":""}
+]},
+{"name":"Data", "description":"",
+"children":[
+    {"name":"SQL", "note":"Analyzed over 20,000+ jewelry product information including sales quantity, purchase details and transition quality to forecast customers' activity for real-time inventory control.","address":""},
+    {"name":"RDBMS", "note":"Integrated and implemented new ERP system to execute database immigration from DB2 to SQL Server. Developed data cleansing tools by using Python, MS Access and SQL.","address":""},
+    {"name":"MapReduce", "note":"","address":""},
+    {"name":"Hadoop Streaming", "note":"","address":""},
+    {"name":"SPSS", "note":"Employed SPSS to analyzed experimental data and report results.","address":""},
+    {"name":"Octave", "note":"","address":""}
+]}
+]}
