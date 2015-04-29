@@ -13,7 +13,7 @@ var bio ={
 	"skills": [
 		"Web UI application design","Script programming","Data mining and analysis"
 	],
-	"bioPic": "images/yen.png"
+	"bioPic": "images/yen2.png"
 
 }
 
@@ -24,7 +24,6 @@ var education = {
 		"location": "New York, New York",
 		"degree": "Bachelor of Business Administration",
 		"majors": ["Finance"],
-		"miner": "",
 		"dates": 2014,
 		"url": "http://www.baruch.cuny.edu/"
 	},
@@ -32,8 +31,7 @@ var education = {
 		"name": "Soochow University",
 		"location": "Taipei, Taiwan",
 		"degree": "Bachelor of Science",
-		"majors": ["Psychology"],
-		"miner": "Law",
+		"majors": ["Psychology, minor in Law"],
 		"dates": 2008,
 		"url": "http://www-en.scu.edu.tw/"
 	}
@@ -108,15 +106,21 @@ var projects = {
 	{
 		"title": "ServerKids (Demo app on Heroku)",
 		"dates": "2015",
-		"description": ["Developed Rails web UI application with Bootstrap to facilitate non-Linux users familiarize control image distribution function.","Note: This is a Demo app on Heroku. It would not be fully functional because it adopted SSH protocol. Authentication keys are required between servers. Please download PDF file to see full Demo."],
+		"description": ["Developed Rails web UI application with Bootstrap to facilitate non-Linux users familiarize control image distribution function.","Note: Here is a Demo app on Heroku. It would not be fully functional because it adopted SSH protocol. Authentication keys are required between servers. Please download PDF file to see full Demo."],
 		"url": "https://nameless-lowlands-1773.herokuapp.com/",
-		"images": ["images/yen.png",""]
+		"images": ["images/sk4.png","images/sk2.png","images/sk3.png"]
 	},{
 		"title": "ShopGem",
 		"dates": "2014",
-		"description": "",
+		"description": ["Implemented eCommerce projects for both wholesale and retail business, applying Ruby and Liquid templates to manage company websites."],
 		"url": "http://www.shopgemnyc.com",
-		"images": ["",""]
+		"images": ["images/shopgem.png"]
+	},{
+		"title": "CatalogMaker",
+		"dates": "2014",
+		"description": ["Utilized Python to design and program customizable catalog application to showcase wholesale jewelry items, thus increasing productivity by 90% compared to using Photoshop."],
+		"url": "https://github.com/Yen168/Python/tree/master/CATA",
+		"images": ["images/shopgem.png"]
 	}
 
 	]
@@ -205,7 +209,11 @@ $("#header").prepend(formattedBioPhoto);
 
 
 for(x in bio.contacts){
-	var formattedContactGen = HTMLcontactGeneric.replace("%contact%",x).replace("%data%",bio.contacts[x]);
+	
+	
+		var formattedContactGen = HTMLcontactGeneric.replace("%contact%",x).replace("%data%",bio.contacts[x]);
+
+	
 	
 	$("#footerContacts").append(formattedContactGen);
 
