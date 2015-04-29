@@ -2,7 +2,7 @@
 var bio ={
 
 	"name": "Yen-An Chen",
-	"role": "Back-End Developer",
+	"role": "Developer",
 	"contacts": {
 		"mobile": "(646)-667-5210",
 		"email": "yenan.chen@gmail.com",
