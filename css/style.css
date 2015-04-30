@@ -79,6 +79,16 @@ a {
   display: block;
 }
 
+
+
+.pdfDL {
+  color: red;
+  font-style: italic;
+  text-decoration: none;
+  margin-top: 1px;
+  display: block;
+}
+
 .welcome-message {
   font-style: italic;
   font-size: 18px;

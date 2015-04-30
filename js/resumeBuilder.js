@@ -2,7 +2,7 @@
 var bio ={
 
 	"name": "Yen-An Chen",
-	"role": "Developer",
+	"role": "<br>Back-End Developer",
 	"contacts": {
 		"mobile": "(646)-667-5210",
 		"email": "yenan.chen@gmail.com",
@@ -135,7 +135,7 @@ var projects = {
 	{
 		"title": "ServerKids (Demo app on Heroku)",
 		"dates": "2015",
-		"description": ["Developed Rails web UI application with Bootstrap to facilitate non-Linux users familiarize control image distribution function.","Note: Here is a Demo app on Heroku. It would not be fully functional because it adopted SSH protocol. Authentication keys are required between servers. Please download PDF file to see full Demo."],
+		"description": ["Developed Rails web UI application with Bootstrap to facilitate non-Linux users familiarize control image distribution function.",'Note: Here is a Demo app on Heroku. It would not be fully functional because it adopted SSH protocol. Authentication keys are required between servers. Please download PDF file to see full Demo.','<a href="asset/serverkids_demo.pdf" class="pdfDL">Download PDF Demo File</a>'],
 		"url": "https://nameless-lowlands-1773.herokuapp.com/",
 		"images": ["images/sk4.png","images/sk2.png","images/sk3.png"]
 	},{
@@ -147,9 +147,9 @@ var projects = {
 	},{
 		"title": "CatalogMaker",
 		"dates": "2014",
-		"description": ["Utilized Python to design and program customizable catalog application to showcase wholesale jewelry items, thus increasing productivity by 90% compared to using Photoshop."],
+		"description": ["Utilized Python to design and program customizable catalog application to showcase wholesale jewelry items, thus increasing productivity by 90% compared to using Photoshop.",'<a href="asset/cm_demo.pdf" class="pdfDL">Download PDF Demo File</a>'],
 		"url": "https://github.com/Yen168/Python/tree/master/CATA",
-		"images": ["images/shopgem.png"]
+		"images": ["images/cm0.png"]
 	}
 
 	]
@@ -329,10 +329,10 @@ education.display = function() {
 		
 		var formattedResearchLoca = HTMLresearchLocation.replace("%data%",education.researches[research].location);
 		$(".research-entry").append(formattedResearchLoca);
+
 	
 
 	}
-
 
 
 } 

@@ -54,6 +54,7 @@ var HTMLresearchTitle = '<br><a href="%url%">%data%</a>';
 var HTMLresearchDates = '<div class="date-text">%data%</div>';
 var HTMLresearchLocation = '<div class="location-text">%data%</div>';
 
+
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
