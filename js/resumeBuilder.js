@@ -11,7 +11,7 @@ var bio ={
 	}, 
 	"welcomeMessage": "",
 	"skills": [
-		"Web UI application design","Script programming","Data mining and analysis"
+		"Web UI application design","Software programming","Data mining and analysis"
 	],
 	"bioPic": "images/yen2.png"
 
