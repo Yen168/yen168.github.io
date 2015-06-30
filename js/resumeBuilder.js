@@ -2,7 +2,7 @@
 var bio ={
 
 	"name": "Yen-An Chen",
-	"role": "<br>Back-End Developer",
+	"role": "<br>Software Developer & Ruby Association Certified Ruby Programmer",
 	"contacts": {
 		"mobile": "(646)-667-5210",
 		"email": "yenan.chen@gmail.com",
@@ -13,7 +13,7 @@ var bio ={
 	"skills": [
 		"Web UI application design","Software programming","Data mining and analysis"
 	],
-	"bioPic": "images/yen2.png"
+	"bioPic": "images/yen_rb.png"
 
 }
 
