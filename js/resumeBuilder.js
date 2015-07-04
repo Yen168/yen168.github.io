@@ -34,6 +34,14 @@ var education = {
 		"majors": ["Psychology, minor in Law"],
 		"dates": 2008,
 		"url": "http://www-en.scu.edu.tw/"
+	},
+	{
+		"name": "Department of Computer Science and Information Engineering, National Taiwan University",
+		"location": "Taipei, Taiwan",
+		"degree": "Certificate in Information System Training Program",
+		"majors": ["C/C++ Programming, Data Structure & Advanced C++ Programming"],
+		"dates": 2006,
+		"url": "https://www.csie.ntu.edu.tw/"
 	}
 	],
 
