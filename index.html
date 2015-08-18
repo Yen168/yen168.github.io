@@ -1,162 +1,599 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<!--
-This is an HTML document. It contains information about how elements in the website
-are arranged. In other words, it describes the layout of a website.
-
-I can't wait to see the resumes you put together!
-
-Cameron Pittman, Udacity Course Developer
--->
-
-<!--
-The <head> of a website generally links to important resources the page will
-need to load. You'll see a lot of <link>s to CSS files for styles and
-<scripts> for JavaScript files to build interactions.
--->
 <head>
-  <!-- This tells the browser how to read the document. -->
-  <meta charset="utf-8">
 
-  <!-- Tells the browser what the title of this page should be. -->
-  <title>Profile</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Load the page styles. -->
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-   <!-- <link href="css/bubble.css" rel="stylesheet" type="text/css"> -->
+    <title>Portfolio of Human Learning by Yen-An Chen</title>
 
-  <!--
-  jQuery is a common JavaScript library for reading and making changes to the
-  Document Object Model (DOM). The DOM is a tree that contains information
-  about what is actually visible on a website.
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  While HTML is a static document, the browser converts HTML to the
-  DOM and the DOM can change. In fact, JavaScript's power comes from
-  its ability to manipulate the DOM, which is essentially a JavaScript
-  object. When JavaScript makes something interesting happen on a
-  website, it's likely the action happened because JavaScript changed
-  the DOM. jQuery is fast and easy to use, but it doesn't do anything
-  you can't accomplish with vanilla (regular) JavaScript.
-  
-<script src="js/jQuery.js"></script>
-  -->
- 
-<!-- 
- /* <script type="text/javascript" src="js/d3.js" charset="utf-8"></script>*/
- -->
-  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
-  
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
 
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-  <!-- More on helper.js in the class -->
-  <script src="js/helper.js"></script>
-  
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-  <!--
-  Uncomment the <script> tag below when you're ready to add an interactive
-  Google Map to your resume!
-  -->
- <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
- -->
-  <meta name="viewport" content="width=device-width">
 </head>
-<body unresolved>
-  <div id="main">
-    
-    <div id="header" class="center-content clearfix">
-      <ul id="topContacts" class='flex-box'></ul>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Yen-An Chen</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Misc.</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Yen-An Chen</span>
+                        <hr class="star-light">
+                        <span class="skills">Certified Ruby Programmer - Business Informatics &amp; Software Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                                <br>
+                                <br><span>ServerKids - Baruch Computing and Technology Center, New York</span>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/serverkids.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                                <br>
+                                <br><span>ShopGem NYC - A &amp; G International Trade Inc, New York</span>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/shopgem.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                                <br>
+                                <br><span>CatalogMaker - A &amp; G International Trade Inc, New York</span>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/catalogmaker.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                                <br>
+                                <br><span>Masterpiece - Ruby Gem<br>HTML Code Generator</span>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/masterpiece.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                                <br>
+                                <br><span>QR Code Mobile Remote Controller<br>Socket Communication, JavaScript</span>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/qrcode.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                                <br>
+                                <br><span>Psychology Research</span>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/psyresearch.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About Me</h2>
+                    <hr class="star-light">
+                    <img src="img/logo_silver_v21.png">
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>I am a Ruby Association Certified Ruby Programmer contributing my technical skills in the field of Information Technology with an emphasis on technology integration. <br><a href="http://yen168.github.io"><i class="glyphicon glyphicon-send"></i>  Visit my Profile</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Special interests include web application design, software programming, data mining and data analysis. Prior work experience related to Tech Support, IT Infrastructure, IT Specialist, Business Informatics and eCommerce.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> My Résumé
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Misc.</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                <p><strong>Certificates</strong><br></p>
+                    <ul class="item-details">
+                        <li>
+                            <strong>Ruby Association Certified Ruby Programmer Silver</strong> #RAS2115420315<br><a href="http://www.ruby.or.jp">Ruby Association</a>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Data Structure & Advanced C++ Programming - Information System Training Program Certificate</strong> #138017<br><a href="https://www.csie.ntu.edu.tw">Department of Computer Science and Information Engineering, National Taiwan University</a>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>C/C++ Programming - Information System Training Program</strong> #137025<br><a href="https://www.csie.ntu.edu.tw">Department of Computer Science and Information Engineering, National Taiwan University</a>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Quality Certification in Food Protection</strong> #11-03845<br><a href="http://www.nyc.gov/html/doh/html/home/home.shtml">New York City Department of Health and Mental Hygiene</a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="col-lg-4">
+                    <p><strong>Academic Degrees</strong><br></p>
+                    <ul class="item-details">
+                        <li>
+                            <strong>Bachelor of Business Administration (BBA) <i class="glyphicon glyphicon-education"></i></strong><br>Major in Finance at Zicklin School of Business<br>New York, U.S.A. 2014<a href="http://www.baruch.cuny.edu"><br>Baruch College, City University of New York</a>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Bachelor of Science (BS) <i class="glyphicon glyphicon-education"></i></strong><br>Major in Psychology, minor in Law<br>Taipei, Taiwan 2008<br><a href="http://www-en.scu.edu.tw">Soochow University</a>
+                        </li>
+                    </ul>
+                     
+                    <p><strong>Licenses</strong></p>
+                    <ul class="item-details">
+                        <li>
+                            <strong>New York State Real Estate Salesperson</strong> #10401263634<br><a href="http://www.dos.ny.gov/licensing">New York State Department of State's Division of Licensing Services</a>
+                        </li>
+                    </ul>
+                    <p><strong>Continue Education</strong></p>
+                    <ul class="item-details">
+                        <li>
+                            <a href="https://www.codecademy.com/yenan.chen"><strong>Profile on Codecademy</strong></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p><br><br><i class="glyphicon glyphicon-fire"></i> Interdisciplinary is <span class="fire"><strong>HOT!!!</strong> <i class="glyphicon glyphicon-fire"></i></span><br><br><i class="glyphicon glyphicon-sunglasses"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>New York City<br>New York</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Keep In Touch</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="mailto:yenan.chen@gmail.com?subject=Hello Yen" class="btn-social btn-outline"><i class="glyphicon glyphicon-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/yenanc" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Yen168" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>I am <i class="glyphicon glyphicon-apple"></i></h3>
+                        <p><a href="http://www.ruby.or.jp" class="ruby"><span class="ruby">Ruby Association</span></a><br>Certified Ruby Programmer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Yen168 2015 U.S.A
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
-    <div style='clear: both;'></div>
-    <div id="workExperience" class='gray'>
-      <h2>Work Experience</h2>
-    
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>ServerKids</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/serverkids.png" class="img-responsive img-centered" alt="">
+                            <p>Developed Rails web UI application with Bootstrap to facilitate non-Linux users familiarize control image distribution function. Note: <a href="https://nameless-lowlands-1773.herokuapp.com">Here is a Demo app on Heroku.</a> It would not be fully functional because it adopted SSH protocol. Authentication keys are required between servers. <br><br>Please <a href="http://yen168.github.io/asset/serverkids_demo.pdf"><span class="ruby">download PDF file</span></a> to see full Demo. <br>Live Demo on Heroku: <a href="https://nameless-lowlands-1773.herokuapp.com">ServerKids</a></p>
+                            <ul class="list-inline item-details">
+                                <li>Designed for:
+                                    <strong><a href="http://www.baruch.cuny.edu/bctc">Baruch Computing and Technology Center, New York</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="https://nameless-lowlands-1773.herokuapp.com">February 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="https://nameless-lowlands-1773.herokuapp.com">Ruby on Rails Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="projects">
-      <h2>Projects</h2>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>ShopGem</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/shopgem.png" class="img-responsive img-centered" alt="">
+                            <p>Implemented eCommerce projects for both <a href="http://jankuojewelry.com">wholesale</a> and <a href="http://www.shopgemnyc.com">retail</a> business, applying Ruby and Liquid templates to manage company websites. Google Analytics was adopted to research and predict consumer behavior.<br><br>Links: <a href="http://www.shopgemnyc.com">ShopGem</a> &amp; <a href="http://jankuojewelry.com">Jankuo Jewelry</a></p>
+                            <ul class="list-inline item-details">
+                                <li>Designed for:
+                                    <strong><a href="http://www.shopgemnyc.com">A &amp; G International Trade Inc, New York</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://www.shopgemnyc.com">December 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://www.shopgemnyc.com">eCommerce &amp; Web Development, Ruby and Liquid templates</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="education" class='gray'>
-      <h2>Education</h2>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Catalog Maker</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/catalogmaker.png" class="img-responsive img-centered" alt="">
+                            <p>Utilized <a href="https://www.python.org">Python</a> to design and program customizable <a href="https://github.com/Yen168/Python/tree/master/CATA">catalog application</a> to showcase wholesale jewelry items, thus increasing productivity by 90% compared to using Photoshop. <br><br>Please <a href="http://yen168.github.io/asset/cm_demo.pdf"><span class="ruby">Download PDF Demo File</span></a><br>or visit <a href="https://github.com/Yen168/Python/tree/master/CATA">source code</a></p>
+                            <ul class="list-inline item-details">
+                                <li>Designed for:
+                                    <strong><a href="https://github.com/Yen168/Python/tree/master/CATA">A &amp; G International Trade Inc, New York</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="https://github.com/Yen168/Python/tree/master/CATA">June 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="https://www.python.org">Application Development, Python</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-      
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Masterpiece</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/masterpiece.png" class="img-responsive img-centered" alt="">
+                            <p><a href="http://yen168.github.io/masterpiece/">Masterpiece</a> - a simple Ruby Gem help master pieces of html tags. <br>Contributed also: <a href="https://github.com/Yen168/giphy_api">Giphy API Wrapper</a></p>
+                            <ul class="list-inline item-details">
+                                <li>Author:
+                                    <strong><a href="https://github.com/Yen168">Yen168</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://yen168.github.io/masterpiece/">July 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Interests:
+                                    <strong><a href="https://rubygems.org/gems/masterpiece">Open Source Development, Ruby Gem</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <h2>Tech Skills</h2>
-    <div id="mainBubble">
-
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>QR controller</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/qrcode.png" class="img-responsive img-centered" alt="">
+                            <p>Start an interaction virtual tour by scanning QR code. Transition by swiping or pressing keyboard keys. QR code generated by Google Chart Tools - <a href="https://developers.google.com/chart/infographics/docs/qr_codes">Infographics API</a>. Use <a href="https://nodejs.org">Node.js</a> and <a href="http://socket.io">Sockrt.io</a> to do socket communication between your mobile devices and desktops! <br><br>Live Demo on Heroku: <a href="https://young-mesa-5396.herokuapp.com">QR code mobile remote controller</a></p>
+                            <ul class="list-inline item-details">
+                                <li>Author:
+                                    <strong><a href="https://github.com/Yen168">Yen168</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="https://young-mesa-5396.herokuapp.com">August 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Interests:
+                                    <strong><a href="https://young-mesa-5396.herokuapp.com">Socket Communication, JavaScript</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="letsConnect" class='dark-gray'>
-      <h2 class='orange center-text'>Ruby Association Certified Ruby Programmer</h2> 
-        <ul id="footerContacts" class="flex-box">
-      </ul>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>&Psi; Research</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/research2.png" class="img-responsive img-centered" alt="">
+                            <br>
+                            <p>Emotion Regulation Questionnaire Tradition Chinese Version<br><br>情緒調控問卷<br><br><a href="http://spl.stanford.edu/pdfs/ERQ/Taiwanese.pdf"><i class="glyphicon glyphicon-download-alt"></i>  Download</a></p>
+                            <ul class="list-inline item-details">
+                                <li>Translators:
+                                    <strong><a href="http://spl.stanford.edu/pdfs/ERQ/Taiwanese.pdf">Wang Man-Ying, Chen Yen-An, Olwen Bedford.</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://spl.stanford.edu/pdfs/ERQ/Taiwanese.pdf">2007.</a>
+                                    </strong>
+                                </li>
+                                <li>Location:
+                                    <strong><a href="http://spl.stanford.edu/resources.html"> Soochow University &amp; National Taiwan University, Taipei, Taiwan.</a>
+                                    </strong>
+                                </li>
+                                <li>Original reference:
+                                    <strong><a href="http://spl.stanford.edu/resources.html"> Stanford Psychophysiology Laboratory.</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <br>
+                            <hr class="star-primary">
+                            <br>
+                            <p>The effect on homepage evaluation with the consistency between product color selection and color perceptual space. (written in Chinese)<br><br>產品與色彩知覺的一致性對網頁評價的影響－以保養品與化妝品網頁為例。<br>台灣心理學會第46屆年會。台南，台灣。</p>
+                            <ul class="list-inline item-details">
+                                <li>Authors:
+                                    <strong><a href="#">曾培斯、王景弘、王榆婷、許家瑋、陳彥安、蔡期輝、趙君綺、汪曼穎.</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">2007.</a>
+                                    </strong>
+                                </li>
+                                <li>Location:
+                                    <strong><a href="#">Taiwanese Psychological Association, Tainan, Taiwan.</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <br>
+                            <hr class="star-primary">
+                            <br>
+                            <p>Inversion effects for Chinese characters, objects and faces.<br>Paper presented at the 10th Conference on Attention &amp; Perception.<br><br><a href="img/portfolio/abstract.pdf"><i class="glyphicon glyphicon-download-alt"></i>  Download</a></p>
+                            <ul class="list-inline item-details">
+                                <li>Authors:
+                                    <strong><a href="http://myweb.scu.edu.tw/~mywang/web/research.html">Wang, M.Y., Chen, Y.A., &amp; Cho, S.L.</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://tci.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclret&s=id=%22TCI0002097665%22.&searchmode=basic&tcihsspage=tcisearch_opt2_search">May 2005.</a>
+                                    </strong>
+                                </li>
+                                <li>Location:
+                                    <strong><a href="http://tci.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclret&s=id=%22TCI0002097665%22.&searchmode=basic&tcihsspage=tcisearch_opt2_search">National Taiwan University, Taipei, Taiwan.</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
- 
-  <!--
-  The next line tells the browser where to download the JavaScript file you'll be
-  writing. In resumeBuilder.js, you'll be writing code that builds the resume
-  dynamically when this website, index.html, is opened.
-  -->
-  <script src="js/resumeBuilder.js"></script>
-  <script src="js/bubble.js"></script>
 
-  <!--
-  These scripts are written in JavaScript. You'll be breaking them down as part of
-  a quiz. Essentially, the next few lines are checking to see if you have not
-  changed each section of the resume. If you have not made any changes to a section
-  of the resume, then that part of the resume does not show up. More on this in the
-  course.
-  -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-  <script type="text/javascript">
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
 
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
+    <!-- Contact Form JavaScript 
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script> -->
 
-    //   two slashes for all following characters on a single line, or
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
 
-    /*
-        an opening and closing set of slash asterisks for block comments.
-    */
-
-
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('letsConnect').style.display = 'none';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-62661506-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </body>
+
 </html>
