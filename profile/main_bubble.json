@@ -23,7 +23,7 @@
 {"name":"Data", "description":"",
 "children":[
     {"name":"SQL", "note":"Analyzed over 20,000+ jewelry product information including sales quantity, purchase details and transition quality to forecast customers' activity for real-time inventory control.","address":""},
-    {"name":"RDBMS", "note":"Integrated and implemented new ERP system to execute database immigration from DB2 to SQL Server. Developed data cleansing tools by using Python, MS Access and SQL.","address":""},
+    {"name":"RDBMS", "note":"Integrated and implemented new ERP system to execute database migration from DB2 to SQL Server. Developed data cleansing tools by using Python, MS Access and SQL.","address":""},
     {"name":"MapReduce", "note":"","address":""},
     {"name":"Hadoop Streaming", "note":"","address":""},
     {"name":"SPSS", "note":"Employed SPSS to analyzed experimental data and report results.","address":""},
