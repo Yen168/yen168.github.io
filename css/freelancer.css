@@ -481,6 +481,8 @@ footer .footer-below {
   transition: all 0.5s;
 }
 
+/*blueflash for myname*/
+
 .blueflash a:hover{
   color:#228DFF;
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
